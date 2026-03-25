@@ -37,15 +37,14 @@ val releaseStorePasswordValue = env("NUVIO_RELEASE_STORE_PASSWORD")
     ?: localProperties.getProperty("NUVIO_RELEASE_STORE_PASSWORD", "815787")
 
 android {
-    namespace = "com.nuvio.tv"
-    compileSdk = 36
+namespace = "com.wilsontv.app"    compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.nuvio.tv"
-        minSdk = 24
+applicationId = "com.wilsontv.app"
+minSdk = 24
         targetSdk = 36
         versionCode = 44
-        versionName = "0.5.1-beta"
+        versionName = "1.0.0-family"
 
         buildConfigField("String", "PARENTAL_GUIDE_API_URL", "\"${localProperties.getProperty("PARENTAL_GUIDE_API_URL", "")}\"")
         buildConfigField("String", "INTRODB_API_URL", "\"${localProperties.getProperty("INTRODB_API_URL", "")}\"")
@@ -63,8 +62,8 @@ android {
         buildConfigField("String", "AVATAR_PUBLIC_BASE_URL", "\"${localProperties.getProperty("AVATAR_PUBLIC_BASE_URL", "")}\"")
 
         // In-app updater (GitHub Releases)
-        buildConfigField("String", "GITHUB_OWNER", "\"tapframe\"")
-        buildConfigField("String", "GITHUB_REPO", "\"NuvioTV\"")
+buildConfigField("String", "GITHUB_OWNER", "\"90paulwilson\"")
+buildConfigField("String", "GITHUB_REPO", "\"WilsonTV\"")
     }
 
     signingConfigs {
