@@ -37,12 +37,11 @@ val LocalNuvioExtendedColors = staticCompositionLocalOf {
     )
 }
 
-val LocalAppTheme = staticCompositionLocalOf { AppTheme.WHITE }
-
+val LocalAppTheme = staticCompositionLocalOf { AppTheme.OCEAN }
 @OptIn(ExperimentalTvMaterial3Api::class)
 @Composable
 fun NuvioTheme(
-    appTheme: AppTheme = AppTheme.WHITE,
+    appTheme: AppTheme = AppTheme.OCEAN,
     appFont: AppFont = AppFont.INTER,
     content: @Composable () -> Unit
 ) {
