@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "My Application"
+rootProject.name = "WilsonTV"
 include(":app")
 include(":baselineprofile")
