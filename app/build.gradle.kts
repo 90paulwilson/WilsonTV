@@ -37,14 +37,15 @@ val releaseStorePasswordValue = env("NUVIO_RELEASE_STORE_PASSWORD")
     ?: localProperties.getProperty("NUVIO_RELEASE_STORE_PASSWORD", "815787")
 
 android {
-namespace = "com.wilsontv.app"    compileSdk = 36
+    namespace = "com.wilsontv.app"
+    compileSdk = 36
 
-    defaultConfig {
-applicationId = "com.wilsontv.app"
-minSdk = 24
-        targetSdk = 36
-        versionCode = 44
-        versionName = "1.0.0-family"
+defaultConfig {
+    applicationId = "com.wilsontv.app"
+    minSdk = 24
+    targetSdk = 36
+    versionCode = 45
+    versionName = "1.0.0-family"
 
         buildConfigField("String", "PARENTAL_GUIDE_API_URL", "\"${localProperties.getProperty("PARENTAL_GUIDE_API_URL", "")}\"")
         buildConfigField("String", "INTRODB_API_URL", "\"${localProperties.getProperty("INTRODB_API_URL", "")}\"")
@@ -186,7 +187,7 @@ buildConfigField("String", "GITHUB_REPO", "\"WilsonTV\"")
 
 androidComponents {
     onVariants(selector().withBuildType("debug")) { variant ->
-        variant.applicationId.set("com.nuviodebug.com")
+        variant.applicationId.set("com.wilsontv.app.debug")
     }
 }
 
@@ -209,7 +210,7 @@ baselineProfile {
     mergeIntoMain = true
     baselineProfileOutputDir = "src/main"
     filter {
-        include("com.nuvio.tv.**")
+        include("com.wilsontv.app.**")
     }
 }
 
