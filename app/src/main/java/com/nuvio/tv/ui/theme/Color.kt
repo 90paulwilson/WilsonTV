@@ -17,12 +17,12 @@ class NuvioColorScheme(palette: ThemeColorPalette) {
     val BackgroundCard = palette.backgroundCard
 
     // Surface colors (constant)
-    val Surface = Color(0xFF1E1E1E)
-    val SurfaceVariant = Color(0xFF2D2D2D)
+    val Surface = Color(0xFF12161C)
+    val SurfaceVariant = Color(0xFF1B2430)
 
     // Primary accent - Neutral Grey (constant)
-    val Primary = Color(0xFF9E9E9E)
-    val PrimaryVariant = Color(0xFF6F6F6F)
+    val Primary = Color(0xFF005AAA)
+    val PrimaryVariant = Color(0xFF00AFE1)
     val OnPrimary = Color(0xFFFFFFFF)
 
     // Secondary accent - Theme dependent
@@ -74,12 +74,12 @@ object NuvioColors {
         get() = NuvioTheme.colors.BackgroundCard
 
     // Surface colors (constant)
-    val Surface = Color(0xFF1E1E1E)
-    val SurfaceVariant = Color(0xFF2D2D2D)
+    val Surface = Color(0xFF12161C)
+    val SurfaceVariant = Color(0xFF1B2430)
 
     // Primary accent - Neutral Grey (constant)
-    val Primary = Color(0xFF9E9E9E)
-    val PrimaryVariant = Color(0xFF6F6F6F)
+    val Primary = Color(0xFF005AAA)
+    val PrimaryVariant = Color(0xFF00AFE1)
     val OnPrimary = Color(0xFFFFFFFF)
 
     // Text colors (constant)
