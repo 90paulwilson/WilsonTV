@@ -33,13 +33,13 @@ object ThemeColors {
     )
 
     val Ocean = ThemeColorPalette(
-        secondary = Color(0xFF1E88E5),
-        secondaryVariant = Color(0xFF1565C0),
-        focusRing = Color(0xFF42A5F5),
-        focusBackground = Color(0xFF1A2D3D),
-        background = Color(0xFF0D0D0F),      // Cool blue tint
-        backgroundElevated = Color(0xFF1A1A1E),
-        backgroundCard = Color(0xFF1A1F24)
+        secondary = Color(0xFF005AAA),
+        secondaryVariant = Color(0xFF00AFE1),
+        focusRing = Color(0xFF00AFE1),
+        focusBackground = Color(0xFF11263A),
+        background = Color(0xFF090E14),
+        backgroundElevated = Color(0xFF101820),
+        backgroundCard = Color(0xFF16222D)
     )
 
     val Violet = ThemeColorPalette(
